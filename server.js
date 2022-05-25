@@ -22,7 +22,7 @@ app.use(express.json()); // latest version of exressJS now comes with Body-Parse
 
 
 app.get('/', (req, res)=> {
-  res.send('it is working');
+  res.send('it is work');
 })
 
 app.post('/signin', (req, res) => {
@@ -115,6 +115,7 @@ app.put('/image', (req, res) => {
 
 
 
-app.listen(process.env.PORT || 3000, ()=> {
-  console.log(`app is running on port ${process.env.PORT}`);
+app.listen(3000, ()=> {
+  console.log('app is running on port 3000');
 })
+//process.env.PORT || 
