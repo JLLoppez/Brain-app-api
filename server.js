@@ -8,10 +8,8 @@ const db = knex({
   // Enter your own database information here based on what you created
   client: 'postgres',
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : 'aby',
-    database : 'Brain-app'
+    host : process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
